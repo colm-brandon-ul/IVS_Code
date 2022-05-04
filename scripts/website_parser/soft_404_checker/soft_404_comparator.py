@@ -13,10 +13,10 @@ class Soft_404_Comparator:
         #If websites are identical then there is a soft404 error
         #with the original url
         if levenshtein_distance == 100:
-            return False
+            return {"boolean" : False, "levenshtein_distance": levenshtein_distance}
         #If they are different then the original Url is valid
         else:
-            return True
+            return {"boolean" : True, "levenshtein_distance": levenshtein_distance}
 
     def extract_text(self):
         soup1 = BeautifulSoup(self.original_website, "html.parser")
