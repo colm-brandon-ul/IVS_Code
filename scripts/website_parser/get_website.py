@@ -15,7 +15,7 @@ class Get_Website:
         response = requests.get(self.url, headers=self.headers)
 
         if response.status_code == 200: 
-            return ("success",response.content)
+            return {"status_code" : "success", "content" : { "url" : self.url, "website" : response.content}}
         else:
-            return ("http_error", "{}|{}".format(response.status_code, response.reason))
+            return {"status_code" : "http_error", "message" : "{}|{}".format(response.status_code, response.reason)}
 
