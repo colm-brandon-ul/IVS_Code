@@ -6,7 +6,7 @@ class Natural_Language_Extraction:
 
     def __init__(self, html):
         self.html = html
-        pass
+        
 
 
     def extract_article_text(self):
