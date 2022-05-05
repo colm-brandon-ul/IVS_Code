@@ -1,19 +1,25 @@
+from xml.etree.ElementInclude import include
 from sympy import re
 import trafilatura
 import information_extractor.natural_language_extraction
 import information_extractor.bag_of_words_extraction
 import information_extractor.network_data_extraction
+import information_extractor.sitemap_extraction
 
 class Information_Extraction:
     #Pass in the url and the html acquired from the http request done in 'get_website'
-    def __init__(self,url, html):
+    def __init__(self,url, html, include_metadata = True, include_sitemap = True):
         self.html = html 
         self.url = url
+        self.include_metadata = include_metadata
+        self.include_sitemap = include_sitemap
         #Creates an instance of the Natural_Language_Extraction, Bag_Of_Words_Extraction and Network_Data_Extraction
-        self.natural_language_extractor = information_extractor.natural_language_extraction.Natural_Language_Extraction(self.html)
-        self.bag_of_words_extractor = information_extractor.bag_of_words_extraction.Bag_Of_Words_Extraction(self.html)
-        self.network_data_extractor = information_extractor.network_data_extraction.Network_Data_Extraction(self.html)
-    
+        self.natural_language_extractor = information_extractor.natural_language_extraction.Natural_Language_Extraction(self.html['content']['website'])
+        self.bag_of_words_extractor = information_extractor.bag_of_words_extraction.Bag_Of_Words_Extraction(self.html['content']['website'])
+        self.network_data_extractor = information_extractor.network_data_extraction.Network_Data_Extraction(self.html['content']['website'],self.url)
+        self.sitemap_extractor = information_extractor.sitemap_extraction.Sitemap_Extraction(self.url)
+
+
     def get_natural_langauge(self):
         #Returns the 'main article text' as per the trafilatura libraries best estimates, also returns 
         # the levensthein distance between the 'main article text' and all the text on the webpage
@@ -28,6 +34,13 @@ class Information_Extraction:
 
     
     def get_network_data(self):
+        self.network_data = self.network_data_extractor.get_network_data()
+        return self.network_data
+
+    def get_metadata(self):
+        pass
+
+    def get_sitemap(self):
         pass
 
 
@@ -36,8 +49,10 @@ class Information_Extraction:
         return {
             'status_code' : 'success',
             'content' : {
-                'natural_language_data' : self.get_natural_langauge,
-                'information_retrieval_data' : self.get_bag_of_words,
-                'network_data' : self.get_network_data
+                'natural_language_data' : self.get_natural_langauge(),
+                'information_retrieval_data' : self.get_bag_of_words(),
+                'network_data' : self.get_network_data(),
+                'metadata' : lambda : self.get_metadata if self.include_metadata else None ,
+                'sitemap' : lambda : self.get_sitemap if self.include_sitemap else None
             }
         }

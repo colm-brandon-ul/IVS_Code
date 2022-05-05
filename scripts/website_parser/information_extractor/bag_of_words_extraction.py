@@ -7,11 +7,11 @@ class Bag_Of_Words_Extraction:
         self.html = html
 
     def extract_bag_of_words(self):
-        self.soup = BeautifulSoup(self.html)
+        self.soup = BeautifulSoup(self.html,'html.parser')
         self.text = self.soup.get_text()
         self.number_of_characthers = len(self.text)
-        return {
+        return {'status_code' : 'success' , 'content' : {
             'character_count': self.number_of_characthers,
             'bag_of_words' : self.text
-        }
+        }}
 

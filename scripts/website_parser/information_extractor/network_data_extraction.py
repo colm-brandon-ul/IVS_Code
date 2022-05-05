@@ -7,7 +7,7 @@ class Network_Data_Extraction:
         self.url = url
 
     def get_network_data(self):
-        soup = BeautifulSoup(self.html)
+        soup = BeautifulSoup(self.html, 'html.parser')
         #get all a tags in the webpage
         a_tags = soup.find_all('a')
         self.links = []
@@ -51,10 +51,10 @@ class Network_Data_Extraction:
                     'text' : a.get_text(),
                     'attrs' : a.attrs
                 })
-        return {
+        return {'status_code' : 'success' , 'content' : {
             'total_links' : len(self.links),
             'total_image_links' : len(self.image_links),
             'links' : self.links,
             'image_links' : self.image_links,
             'a_tags_with_no_link' : self.discarded_a_tags
-        }
+        }}

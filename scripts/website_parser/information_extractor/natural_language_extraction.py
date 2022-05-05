@@ -25,7 +25,7 @@ class Natural_Language_Extraction:
         #Using the trafilatura library, extract the article/main text from the website
         self.xml = trafilatura.extract(self.html, include_formatting = True, output_format='xml')
         #Using Beautiful Soup extract all text to calculate recall.
-        all_soup = BeautifulSoup(self.html)
+        all_soup = BeautifulSoup(self.html, 'html.parser')
         local_soup = BeautifulSoup(self.xml, 'xml')
         trafilatura_text = local_soup.get_text()
         all_text = all_soup.get_text()
@@ -46,6 +46,6 @@ class Natural_Language_Extraction:
                 j += 1
             i += 1
         
-        return {
+        return {'status_code' : 'success' , 'content' : {
             'levenshtein_distance' : levenshtein_distance,
-            'sentence_map': self.sentence_map}
+            'sentence_map': self.sentence_map}}
