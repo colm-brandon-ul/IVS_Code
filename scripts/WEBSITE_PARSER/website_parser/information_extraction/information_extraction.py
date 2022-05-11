@@ -1,10 +1,9 @@
+import imp
 from xml.etree.ElementInclude import include
 from sympy import re
 import trafilatura
-import information_extractor.natural_language_extraction
-import information_extractor.bag_of_words_extraction
-import information_extractor.network_data_extraction
-import information_extractor.sitemap_extraction
+from . import natural_language_extraction, network_data_extraction, bag_of_words_extraction, sitemap_extraction, metadata_extraction
+
 
 class Information_Extraction:
     #Pass in the url and the html acquired from the http request done in 'get_website'
@@ -14,11 +13,11 @@ class Information_Extraction:
         self.include_metadata = include_metadata
         self.include_sitemap = include_sitemap
         #Creates an instance of the Natural_Language_Extraction, Bag_Of_Words_Extraction and Network_Data_Extraction
-        self.natural_language_extractor = information_extractor.natural_language_extraction.Natural_Language_Extraction(self.html['content']['website'])
-        self.bag_of_words_extractor = information_extractor.bag_of_words_extraction.Bag_Of_Words_Extraction(self.html['content']['website'])
-        self.network_data_extractor = information_extractor.network_data_extraction.Network_Data_Extraction(self.html['content']['website'],self.url)
-        self.sitemap_extractor = information_extractor.sitemap_extraction.Sitemap_Extraction(self.url)
-
+        self.natural_language_extractor = natural_language_extraction.Natural_Language_Extraction(self.html['content']['website'])
+        self.bag_of_words_extractor = bag_of_words_extraction.Bag_Of_Words_Extraction(self.html['content']['website'])
+        self.network_data_extractor = network_data_extraction.Network_Data_Extraction(self.html['content']['website'],self.url)
+        self.sitemap_extractor = sitemap_extraction.Sitemap_Extraction(self.url)
+        self.metadata_extractor = metadata_extraction.Metadata_Extraction(self.html['content']['website'])
 
     def get_natural_langauge(self):
         #Returns the 'main article text' as per the trafilatura libraries best estimates, also returns 
@@ -38,13 +37,23 @@ class Information_Extraction:
         return self.network_data
 
     def get_metadata(self):
-        pass
-
+        self.metadata = self.metadata_extractor.get_metadata()
+        return self.metadata
     def get_sitemap(self):
-        pass
+        self.sitemap_links = self.sitemap_extractor.extract_sitemap_links()
+        return self.sitemap_links
 
 
     def extract_information(self):
+        
+        metadata = None
+        sitemap = None 
+        if self.include_metadata:
+            metadata = self.get_metadata()
+        
+        if self.include_sitemap:
+            sitemap = self.get_sitemap()
+
 
         return {
             'status_code' : 'success',
@@ -52,7 +61,7 @@ class Information_Extraction:
                 'natural_language_data' : self.get_natural_langauge(),
                 'information_retrieval_data' : self.get_bag_of_words(),
                 'network_data' : self.get_network_data(),
-                'metadata' : lambda : self.get_metadata if self.include_metadata else None ,
-                'sitemap' : lambda : self.get_sitemap if self.include_sitemap else None
+                'metadata' : metadata,
+                'sitemap' : sitemap
             }
         }

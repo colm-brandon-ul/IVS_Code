@@ -1,6 +1,6 @@
 import get_website
-import soft_404_checker.link_augmentation
-import soft_404_checker.soft_404_comparator
+import link_augmentation
+import soft_404_comparator
 
 
 class Soft_404:
@@ -11,7 +11,7 @@ class Soft_404:
 
     def check_for_soft_404(self):
         #Augment the original url to one that should force a 404 
-        link_augmenter = soft_404_checker.link_augmentation.Link_Augmentation(self.original_url)
+        link_augmenter = link_augmentation.Link_Augmentation(self.original_url)
         augmented_url = link_augmenter.get_augmented_link()
         gW = get_website.Get_Website(augmented_url)
         response = gW.get_website() 
@@ -22,7 +22,7 @@ class Soft_404:
             #comparator takes in the original website and the repsonse from the augmented link
             #it then extracts the texts from both and calculates the levenshtein distance.
             #compare_websites returns a {k,v} containing the boolean results and the distance ratio
-            comparator = soft_404_checker.soft_404_comparator.Soft_404_Comparator(self.original_website_content,response["content"]["website"])
+            comparator = soft_404_comparator.Soft_404_Comparator(self.original_website_content,response["content"]["website"])
             comparator_results = comparator.compare_websites()
             if comparator_results['boolean']:
                 return {"status_code" : "success", "content" : self.original_website_content}
