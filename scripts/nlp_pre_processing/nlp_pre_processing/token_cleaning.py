@@ -84,7 +84,7 @@ class Token_Cleaning:
                                 self.single_edit_map[t_count] = {'token' : tkn, 'type_of_edit' : 'removal_of_intra_word_punctuation'}
                                
                             #Hight the beggining/ending of a quote
-                            elif cln_tkn in ['\'', '"', '``', '``', '`',"''"]:
+                            elif cln_tkn in ['\'','‘','’' '"', '``', '``', '`',"''", '‘', '’',]:
                                 clean_tokens.append(cln_tkn)
                                 self.single_quote_identifiers.append("{}".format(str(t_count)))
                             # No change occured
