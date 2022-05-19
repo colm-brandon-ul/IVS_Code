@@ -8,14 +8,15 @@ class Token_Cleaning:
     all_punctuation =  '!$%()*+,./:;<=>?@[\\]^{|}~'
     #This enables for mapping back from the clensed text to the original text
     #Potentially could be useful for the exper portal
-    edit_map = {}
-    quote_identifiers = []
-    single_edit_map = {}
-    single_quote_identifiers = []
+    
     #Takens a token map as it's input
     def __init__(self, token_map = None, tokens = None):
         self.token_map = token_map
         self.tokens = tokens
+        self.edit_map = {}
+        self.quote_identifiers = []
+        self.single_edit_map = {}
+        self.single_quote_identifiers = []
 
     def remove_punctutation(self, is_token_map = True):
         if is_token_map:

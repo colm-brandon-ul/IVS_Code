@@ -16,6 +16,7 @@ class Sitemap_Extraction:
         return self.primary_domain
 
     def extract_sitemap_links(self):
+        print('Primary domain: {}'.format(self.primary_domain))
         self.website_internal_links = sitemaps.sitemap_search("https://{}".format(self.primary_domain))
         number_of_links = len(self.website_internal_links)
         if number_of_links > 0:

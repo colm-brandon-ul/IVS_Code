@@ -50,17 +50,28 @@ class Information_Extraction:
         sitemap = None 
         if self.include_metadata:
             metadata = self.get_metadata()
+        print('Extracted Metadata')
         
         if self.include_sitemap:
             sitemap = self.get_sitemap()
+        print('Extracted Sitemap')
+
+        self.get_natural_langauge()
+        print('Extracted Natural Language')
+        self.get_bag_of_words()
+        print('Extracted Bag of Words')
+        self.get_network_data()
+        print('Extracted Network Data')
+
+
 
 
         return {
             'status_code' : 'success',
             'content' : {
-                'natural_language_data' : self.get_natural_langauge(),
-                'information_retrieval_data' : self.get_bag_of_words(),
-                'network_data' : self.get_network_data(),
+                'natural_language_data' : self.natural_language_data,
+                'information_retrieval_data' : self.bag_of_words,
+                'network_data' : self.network_data,
                 'metadata' : metadata,
                 'sitemap' : sitemap
             }

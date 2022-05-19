@@ -1,0 +1,23 @@
+Weight loss during systemic therapy linked to shorter survival in colorectal cancer
+
+Weight loss during the first 3 months of systemic therapy for metastatic colorectal cancer coincided with significantly shorter OS compared with stable or increasing weight, according to study results.
+
+The findings of the pooled analysis presented in a poster at ASCO Gastrointestinal Cancers Symposium suggested a need for further research exploring the usefulness of on-treatment early weight loss as a novel intermediary endpoint.
+
+“Degree of weight loss is proportional to the observed increased risk [for] death and remains evident among underweight, normal weight and obese individuals,” Jan Franko, MD, PhD, general surgeon in the department of surgical oncology at MercyOne Des Moines Surgical Group, and colleagues stated in the poster.
+Background and methodology
+
+Prior studies showed an association of higher baseline BMI with improved survival among patients with metastatic colorectal cancer. Franko and colleagues sought to determine whether associations also existed between weight gain or loss after diagnosis and survival.
+
+The analyses included data of 3,504 patients with previously untreated metastatic colorectal cancer enrolled in five randomized phase 3 trials between 2000 and 2006.
+
+Researchers recorded each patient’s weight at 3 months after diagnosis and for up to 5 years. They categorized patients into three groups based on percent weight change at 3 months: stable weight or gain, weight loss up to 5%, and 5% or greater weight loss.
+
+Franko and colleagues assessed prognostic associations of weight change at 3 months with OS and PFS using Cox models, adjusting for baseline BMI, age, sex, performance score, oxaliplatin vs. irinotecan as the chemotherapy backbone, and biologics type (cetuximab [Erbitux, Eli Lilly] vs. bevacizumab). They also used Cox models to adjust for other clinical-pathological factors, including primary tumor on the right colon vs. left colorectum and BRAF status.
+Key findings
+
+The analysis revealed a median percent weight change at 3 months of 0.5% (interquartile range, 4 to 1.6).
+
+Franko and colleagues reported patients with weight stability or weight gain demonstrated longer adjusted median OS (23.5 months) than those with up to 5% weight loss (20.7 months; HR = 1.21; 95% CI, 1.09-1.34) and those with 5% or greater weight loss (14.5 months; HR = 1.96; 95% CI, 1.74-2.22). They found consistent results for PFS among patients with 5% or greater loss of baseline weight, as well as for sub-analyses.
+
+The prognostic score defined three patient groups with significantly different prognosis in OS and PFS with adequate C-indices: 0.63 and 0.58, the poster stated.

@@ -1,0 +1,43 @@
+Screening Rates for Breast, Cervical, and Colon Cancer Remain Below Pre-Pandemic Levels
+
+Researchers expected to find a big increase in cancer screenings in 2021 to make up for a dramatic drop in cancer screenings at the onset of the coronavirus pandemic.
+Cancer screening rates remain below levels prior to the coronavirus pandemic, according to a recent research article published by Epic Research.
+
+At the onset of the pandemic, there was a dramatic drop in routine cancer screenings as patients avoided doctor offices out of fear of contagion and healthcare organizations focused on COVID-19 testing and cases. An earlier study published by Epic Research found breast cancer and cervical cancer screenings decreased 94% at the beginning of the pandemic and colon cancer screenings decreased 86%.
+
+The recent research article is based on information collected from a database with more than 126 million patients from 156 Epic organizations, including 889 hospitals and 19,420 clinics. The researchers looked back at breast cancer, cervical cancer, and colon cancer screening rates to 2017 to establish a pre-pandemic screening rate baseline.
+The recent study features several key data points for the period from January 2021 to October 2021.
+
+    The breast cancer screening rate was 2.7% below the pre-pandemic screening rate baseline
+     
+    The colon cancer screening rate was 3.4% below the pre-pandemic screening rate baseline
+     
+    The cervical cancer screening rate was 10.0% below the pre-pandemic screening rate baseline
+     
+    These screening rates result in an estimated 68,000 missed breast cancer screenings, 27,000 missed colon cancer screenings, and 9,000 missed cervical cancer screenings
+
+"Despite many clinics reopening in the spring and summer of 2021, we still see lower than expected rates of routine cancer screenings. Further delays in cancer screening could lead to delayed cancer diagnoses, which could increase morbidity and mortality and exacerbate existing healthcare disparities, as well as increase healthcare costs. Ongoing efforts to increase patient access to affordable screenings are important to our nation's COVID recovery," the study's co-authors wrote.
+
+Interpreting the data
+
+The recent study is the fourth study Epic Research has conducted on cancer screening rates before and during the pandemic, the lead author of the recent study told HealthLeaders. "We have looked at how cancer screening rates have evolved since the pandemic began. Initially, there was a dramatic decrease, then there was a subsequent rebound, although cancer screening rates are still not quite at where we expected them to be," said Chris Mast, MD, vice president of clinical informatics at Epic Research.
+
+Having cancer screening rates below the pre-pandemic baseline is concerning, he said. "Across the board, anytime that you are potentially missing cancer screening, that is troubling. Screening is designed to detect cancer early while it is ideally small, not at an advanced stage, and more easily treatable so that you can have better outcomes."
+
+Mast's research team had expected to see higher cancer screening rates in 2021, he said.
+
+"There was an initial big dip in cancer screenings. What we thought might happen was a 'catch up' in screenings after the initial decrease. At some point, when people felt better about going back to their doctors for their routine visits and healthcare organizations had their feet under them, we thought that we might see a big spike among people who had not gotten their routine screenings. We did not see a big spike in routine screenings. We saw some seasonal patterns such as more breast cancer screening during Breast Cancer Awareness Month. But we did not see a big increase in screening across the board, with people saying, 'Now I can go back and catch up.' We have seen screening return close to baseline but that implies that many screenings have just not gotten done."
+
+The potential for cancers going undetected because of reduced screening has implications for healthcare costs, Mast said. "In addition to the human toll of not detecting cancer early, when cancers are found at an advanced stage, they are more extensive, more likely to spread to other parts of the body, and more difficult to treat, which leads to higher expense in treatment. It is intuitive how advanced cancer could certainly require more intensive treatment, longer duration of treatment, and potentially more complications as part of the treatment. All of those things contribute to increased healthcare costs."
+
+Encouraging people to get cancer screening
+
+Healthcare professionals should seize on opportunities to encourage their patients to get routine cancer screening, he said.
+
+"There is no one best way to get into contact with patients or to encourage them to get cancer screenings done. What works is doing everything. We need multichannel communication. Every contact with patients becomes an opportunity not only to address the concern that brought them to you but also to encourage them to look at their health maintenance items such as cancer screenings. When there is contact with any healthcare provider, they should be encouraging patients to get their cancer screenings done."
+
+A little bit of encouragement can go a long way, Mast said.
+
+"Smoking cessation is a good example. We find that when a trusted person in the patient's care team such as a physician brings up the topic of smoking cessation with the patient, that can be the incentive that the patient needs to pursue smoking cessation. The same thing is true of cancer screening. Health systems, hospitals, physician practices, and, even more broadly, home health workers and pharmacists, can do a small part to remind people to get their screenings done. In aggregate, that helps move the needle and activate more patients to get their screenings done."
+
+Christopher Cheney is the senior clinical care​ editor at HealthLeaders.

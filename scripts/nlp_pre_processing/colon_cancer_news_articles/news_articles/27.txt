@@ -1,0 +1,38 @@
+American Cancer Society Report Sheds Light on Cancer Statistics and Racial/Ethnic Disparities
+
+For World Cancer Day, CancerNetwork® reviews key highlights from the Cancer Facts & Figures 2022 report from the American Cancer Society, with updates in cancer incidence, mortality, and survival across patient subgroups.
+
+Cancer Facts & Figures 2022 from the American Cancer Society highlights important developments and trends in cancer, including incidence, mortality, and survival by age, sex, and race. In honor of World Cancer Day, CancerNetwork® touches on some of the key highlights from the report.
+
+The population-based incidence data were gathered from the Surveillance, Epidemiology, and End Results (SEER) program since 1973 and the Centers for Disease Control and Prevention’s National Program of Cancer Registries since 1995.1 Additionally, mortality findings from 1930 through 2019 were obtained from the National Center for Health Statistics. Cases of cancer were defined by International Classification of Diseases for Oncology, except for childhood and adolescent disease.
+
+Expected Cancer Incidence in 2022
+
+Investigators expect an estimated incidence of new invasive cancers in the United States of 1,918,030, translating to 5250 new cases daily. Most common malignancies include 51,400 new cases of ductal carcinoma in situ of the breast in women, as well as 97,920 cases of melanoma in situ of the skin. The most diagnosed cancers in men are estimated to be prostate (27%), lung and bronchus (12%), colon and rectum (8%), and urinary bladder (6%).2 For women, the most diagnosed cancers are expected to be breast (31%), lung and bronchus (13%), colon and rectum (8%), and uterine corpus (7%).
+
+Men have a slightly higher lifetime probability of being diagnosed with invasive cancer compared with women (40.2% vs 38.5%). The reasons for this are not completely understood but could be due in part to a higher exposure to cancer-causing environments and biological factors.
+
+Estimates in Cancer Mortality
+
+Additional estimates indicate that approximately 609,360 people in the United States will die of cancer in 2022, translating to about 1700 cancer deaths daily. Among men, most deaths are due to lung (21%), prostate (11%), and colorectal cancer (CRC; 9%); in women, most deaths are due to lung (21%), breast (15%), and CRC (8%). Over 350 patients will die of lung cancer daily, which is 2.5 time higher that CRC and leads to greater mortality than breast, prostate, and pancreatic cancer combined. It is estimated that approximately 81% of deaths related to lung cancer will be caused by direct cigarette smoking and 3650 will be attributed to second-hand smoke
+Examining Cancer in American Indians and Alaskan Native Subgroup
+
+In a special section of the report, investigators detailed specific cancer data that are unique to the United States’ population of American Indian and Alaskan Native individuals. Due to acts of “genocide, forced displacement, and relocation perpetrated by US citizens and the military,” it is reported that two-thirds of American Indian or Alaska Native individuals reside in tribal areas or surrounding regions known as Purchased/Referred Care Delivery Area (PRCDA) counties. These areas are primarily located in the Western United States and are predominantly rural vs non-PRCDA counties. Due to persisting systemic racism, this subgroup has limited access to health care, high-quality education, and economic opportunities, leaving them twice as likely to live in poverty compared with White individuals.
+
+Notably, cancer data by tribal affiliation are not currently available, but the report highlighted difference between PRCDA regions when available highlight the heterogeneity of cancer burden across this patient group. Incidence of cancer within this group is higher compared with the White population in several disease types, including lung, colorectal, and kidney cancers, as well as cancers if the liver, stomach, and cervix.
+
+Notably, risk and disparities varied significantly based on region, with lung cancer being commonly diagnosed among those within the Southwest at 16.8 individuals per 100,000—64% lower than White individuals—and 109.3 per 100,000 in the Northern Plains—80% higher than White individuals. When assessing incidence for all disease types, rates ranged from 323.2 per 100,000 in the Southwest and 666.7 per 100,000 in the Southern Plains, which were 23% lower and 49% higher vs the White population, respectively. Although incidence appeared to be more favorable for indigenous populations residing in the Eastern region compared with the White population (29% lower), this may be in part due to the White population being the highest of any PRCDA region.
+
+Cancer within American Indians and Alaskan Natives is generally diagnosed at later stages, with breast and stomach cancers accounting for the biggest disparities. The group also had worse 5-year survival rates vs White patients across most disease types. For example, the 5-year survival rate for patients with stomach cancer is 19% for American Indian and Alaskan Native patients compared with 32% for White patients. Further, the disparities are likely to be underestimated due to racial misclassification and other biases. The later diagnosis and lower survival can likely be attributed to less accessible high-quality health care and hurdles to diagnostics and treatment.
+
+Other Racial Disparities in Cancer
+
+Although cancer incidence is higher in the White population—which may be attributed to an overdiagnosis of breast cancer—Black men had the highest sex-specific incidence, which was 79% higher than Asian and Pacific Islander and 6% higher than White men from 2014 to 2018.Moreover, White women appeared to have the highest incidence of cancer from 2013 to 2018, which was 9% higher than in Black women despite this group having higher mortality by 12%. Interestingly, despite having a 4% lower incidence, Black women have a 41% higher mortality from breast cancer vs White women. Black men share similar disparities in cancer mortality, at more than double the rate of Asian and Pacific Islander patients and 19% higher than White male patients.
+
+Despite the gap in disparities appearing significant, investigators note that Black/White disparities in mortality have decreased from 33% in 1993 to 14% in 2019.
+
+References
+
+    Siegel R, Miller KD, Fuchs HE, et al. Cancer statistics, 2022. ACS Journals. 2022;72(1):7-33. doi:10.3322/caac.21708
+    Cancer Facts & Figures 2022. American Cancer Society. January 2022. Accessed January 31, 2022. https://bit.ly/346eiu3
+    

@@ -36,6 +36,7 @@ class Quote_Extraction:
 
     def extract_quotes(self):
         blocks = list(self.grouper(self.quote_identifiers,2))
+        #print(blocks)
         count = 0
         for blcks in blocks:
             if blcks[0] != None and blcks[1] != None:

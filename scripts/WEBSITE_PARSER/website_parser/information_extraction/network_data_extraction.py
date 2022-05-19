@@ -31,20 +31,21 @@ class Network_Data_Extraction:
                     })
                 else:
                     img = a.find('img')
-                    if 'alt' in img.attrs:
-                        self.image_links.append({
-                            'alt_text' : img.attrs['alt'],
-                            'src' : img.attrs['src'],
-                            'href' : a.attrs['href'],
-                            'internal' : o.hostname == m.hostname
-                        })
-                    else:
-                        self.image_links.append({
-                            'alt_text' : None,
-                            'src' : img.attrs['src'],
-                            'href' : a.attrs['href'],
-                            'internal' : o.hostname == m.hostname
-                        })
+                    if img != None:
+                        if 'alt' in img.attrs:
+                            self.image_links.append({
+                                'alt_text' : img.attrs['alt'],
+                                'src' : img.attrs['src'] if 'src' in img.attrs.keys() else None,
+                                'href' : a.attrs['href'],
+                                'internal' : o.hostname == m.hostname
+                            })
+                        else:
+                            self.image_links.append({
+                                'alt_text' : None,
+                                'src' : img.attrs['src'] if 'src' in img.attrs.keys() else None,
+                                'href' : a.attrs['href'],
+                                'internal' : o.hostname == m.hostname
+                            })
 
             else:
                 self.discarded_a_tags.append({
